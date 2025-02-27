@@ -1,50 +1,98 @@
-Got it! Since you’re using **VS Code on Mac** and want to create the **README file directly on GitHub**, here’s what you can do:  
-
-1. **Go to Your GitHub Repository**  
-2. Click on **"Add a README"** (you’ll see this option if the repo doesn’t have one).  
-3. Copy and paste the following README content into the editor:  
+Here’s a more **attractive and well-structured** `README.md` file for your GitHub repository:  
 
 ---
 
-# 📖 RAG-Powered PDF Query System  
+# 🚀 RAG-Based Chatbot with OpenAI & ChromaDB  
 
-## 🚀 Overview  
-This project implements a **Retrieval-Augmented Generation (RAG) system** using **OpenAI's API** and **ChromaDB**. It allows users to:  
-✅ Upload **multiple PDF files** 📄  
-✅ **Chunk** the content for efficient retrieval  
-✅ **Store** the chunks in **ChromaDB**  
-✅ Ask **relevant questions** about the PDFs  
-✅ Get accurate responses based on the stored information  
-✅ Receive a **controlled response** if the question is out of context  
+![Project Banner](https://via.placeholder.com/1000x300?text=RAG+Chatbot+%7C+OpenAI+%7C+ChromaDB+%7C+Cardo)  
 
-## 🛠️ Technologies Used  
-- **Python** 🐍  
-- **FastAPI** (for backend) ⚡  
-- **ChromaDB** (for vector storage)  
-- **OpenAI API** (for LLM-powered responses)  
-- **PyMuPDF** / **pdfminer** (for PDF processing)  
+📖 **A powerful Retrieval-Augmented Generation (RAG) chatbot that processes multiple PDFs, stores them in ChromaDB, and provides accurate responses using OpenAI's API. It ensures relevant answers and ignores out-of-context queries. Includes a sleek frontend built with Cardo!**  
 
-## 🚀 How It Works  
-1️⃣ PDFs are uploaded and split into **chunks**.  
-2️⃣ The chunks are converted into **embeddings** and stored in **ChromaDB**.  
-3️⃣ When a user asks a question, the system:  
-   - Retrieves the **most relevant chunks** 📌  
-   - Sends them to **OpenAI’s API** for a response ✨  
-   - If the question is **out of context**, it prompts the user to ask about the uploaded PDFs only.  
+---
 
-## 📌 Setup Instructions  
-Clone the repo and install dependencies:  
+## 🔥 Features  
+✅ **PDF Processing** – Extracts and chunks text from multiple PDFs.  
+✅ **ChromaDB Storage** – Efficient vector storage for quick retrieval.  
+✅ **OpenAI-Powered Responses** – Generates answers based on provided data.  
+✅ **Out-of-Context Filtering** – Ignores unrelated questions.  
+✅ **Modern UI with Cardo** – Seamless user experience with an interactive frontend.  
+
+---
+
+## 🛠️ Setup & Installation  
+
+### 1️⃣ Clone the Repository  
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/yourusername/your-repo-name.git
+cd your-repo-name
+```
+
+### 2️⃣ Install Dependencies  
+```bash
 pip install -r requirements.txt
 ```
-Run the application:  
-```bash
-uvicorn main:app --reload
+
+### 3️⃣ Set Up Environment Variables  
+Create a `.env` file and add your **OpenAI API key**:  
+```env
+OPENAI_API_KEY=your_openai_api_key
 ```
 
-## 📬 Contributing  
-Feel free to submit PRs or open issues for improvements! 🎉  
+---
+
+## 🚀 Running the Project  
+
+### 🏗️ **Step 1: Ingest PDFs & Initialize Database**  
+This step processes the PDFs, chunks the text, and stores it in **ChromaDB**.  
+```bash
+python ingest_database.py
+```
+
+### 🤖 **Step 2: Start the Chatbot**  
+Run the chatbot server to handle user queries.  
+```bash
+python chatbot.py
+```
+
+### 🎨 **Step 3: Run the Frontend (Cardo UI)**  
+If using a frontend, ensure Cardo is properly set up and running.  
+
+---
+
+## 📌 How It Works  
+1️⃣ **Upload PDFs** – The system processes and chunks the text.  
+2️⃣ **Store in ChromaDB** – Efficient retrieval for quick responses.  
+3️⃣ **User Queries** – Ask relevant questions and get precise answers.  
+4️⃣ **Out-of-Context Detection** – Blocks unrelated queries.  
+
+---
+
+## 🏆 Why Use This?  
+✅ **Accurate & Fast** – Retrieves only relevant data.  
+✅ **Secure & Scalable** – Uses ChromaDB for optimized performance.  
+✅ **Easy to Use** – Simple setup and smooth UI with Cardo.  
+
+---
+
+## 🛠️ Tech Stack  
+🔹 **Backend:** Python, FastAPI, OpenAI API, ChromaDB  
+🔹 **Frontend:** Cardo (React-based)  
+
+---
+
+## 💡 Future Improvements  
+🔹 Add support for more file types (DOCX, TXT, etc.)  
+🔹 Improve response ranking for better relevance  
+🔹 Deploy as a web app  
+
+---
+
+## 🎯 Contributing  
+Contributions are welcome! Feel free to submit **issues** and **pull requests**.  
+
+---
+
+## 📞 Contact  
+For queries, reach out at **atiflodhi926@gmail.com** or open an **issue** in the repository.  
 
 ---
