@@ -1,4 +1,4 @@
-Here’s a more **attractive and well-structured** `README.md` file for your GitHub repository:  
+Here's your enhanced **README.md**, now including details about where to place the PDFs:  
 
 ---
 
@@ -40,6 +40,24 @@ OPENAI_API_KEY=your_openai_api_key
 
 ---
 
+## 📂 Folder Structure  
+Make sure to create a folder named **`data`** (or any other name you prefer) in the project directory. Place all your **PDF files** inside this folder.  
+
+```
+/your-repo-name
+│── /data/               <-- Place your PDFs here  
+│   ├── document1.pdf  
+│   ├── document2.pdf  
+│── ingest_database.py   <-- Process PDFs & store data  
+│── chatbot.py           <-- Run chatbot  
+│── frontend/            <-- Cardo UI (if applicable)  
+│── requirements.txt  
+│── .env                 <-- Add your OpenAI API Key  
+│── README.md  
+```
+
+---
+
 ## 🚀 Running the Project  
 
 ### 🏗️ **Step 1: Ingest PDFs & Initialize Database**  
@@ -60,7 +78,7 @@ If using a frontend, ensure Cardo is properly set up and running.
 ---
 
 ## 📌 How It Works  
-1️⃣ **Upload PDFs** – The system processes and chunks the text.  
+1️⃣ **Upload PDFs** – Place files inside the `/data` folder.  
 2️⃣ **Store in ChromaDB** – Efficient retrieval for quick responses.  
 3️⃣ **User Queries** – Ask relevant questions and get precise answers.  
 4️⃣ **Out-of-Context Detection** – Blocks unrelated queries.  
@@ -96,3 +114,4 @@ Contributions are welcome! Feel free to submit **issues** and **pull requests**.
 For queries, reach out at **atiflodhi926@gmail.com** or open an **issue** in the repository.  
 
 ---
+
